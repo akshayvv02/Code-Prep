@@ -302,3 +302,12 @@ int dequeue() {
 | Dequeue time            | O(n) (due to shifting)  | O(1)                 |
 | Space efficiency        | Poor if not managed     | Excellent            |
 | Complexity to implement | Simple                  | Slightly more logic  |
+
+| Technique         | Type            | Lookup Time           | Insert Time | Extra Space        | Notes                |
+| ----------------- | --------------- | --------------------- | ----------- | ------------------ | -------------------- |
+| Chaining          | Separate        | O(1) avg / O(n) worst | O(1)/O(n)   | ✅ Lists per bucket | Easy, scalable       |
+| Linear Probing    | Open Addressing | O(1) avg / O(n) worst | O(1)/O(n)   | ❌ In-place         | Clustering risk      |
+| Quadratic Probing | Open Addressing | O(1) avg / O(n) worst | O(1)/O(n)   | ❌ In-place         | Better than linear   |
+| Double Hashing    | Open Addressing | O(1) avg / O(n) worst | O(1)/O(n)   | ❌ In-place         | Best distribution    |
+| Cuckoo Hashing    | Hybrid          | O(1)                  | O(1)        | ✅ Two tables       | Complex but powerful |
+
